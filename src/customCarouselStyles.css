@@ -1,0 +1,18 @@
+.carousel .carousel-status {
+    display: none;
+  }
+  
+  .carousel .control-dots {
+    /* position: static; */
+    margin-top: 16px;
+  }
+  
+  .carousel .control-dots .dot {
+    background-color: #fff;
+    box-shadow: none;
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background-color: #3B2D24;
+  }
+  
