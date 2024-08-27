@@ -153,8 +153,8 @@ const Home = () => {
         <Button
           variant="contained"
           sx={{
-            backgroundColor: '#3B2D24',
-            color: '#C1B49A',
+            backgroundColor: '#e4e2dd', 
+            color: '#4E3827', //#4E3827
             padding: '10px 20px',
           }}
         >
@@ -195,7 +195,8 @@ const Home = () => {
 
       <Box
       sx={{
-        backgroundColor: '#C1B49A',
+        backgroundColor: '#e4e2dd',
+        color: '#4E3827',
         py: 8,
         textAlign: 'center',
         position: 'relative', // Ensure position relative for indicator positioning
@@ -219,7 +220,7 @@ const Home = () => {
             fontSize: '20px', // Adjust the size of the dots
           };
           const style = isSelected
-            ? { ...defStyle, color: '#3B2D24' }
+            ? { ...defStyle, color: '#4E3827' }
             : { ...defStyle };
           return (
             <span
@@ -249,10 +250,10 @@ const Home = () => {
               alignItems: 'center',
             }}
           >
-            <Typography variant="body1" sx={{ mb: 2, color: '#FFF' }}>
+            <Typography variant="body1" sx={{ mb: 2, color: '#4E3827' }}>
               "{testimonial.quote}"
             </Typography>
-            <Typography variant="subtitle1" component="p" sx={{ fontStyle: 'italic', color: '#FFF' }}>
+            <Typography variant="subtitle1" component="p" sx={{ fontStyle: 'italic', color: '#4E3827' }}>
               - {testimonial.name}
             </Typography>
           </Box>
@@ -263,8 +264,8 @@ const Home = () => {
       {/* Newsletter Subscription Section */}
       <Box
         sx={{
-          backgroundColor: '#4E3827',
-          color: '#e4e2dd',
+        //   backgroundColor: '#4E3827', #C1B49A
+          color: '#4E3827',
           py: 8,
           textAlign: 'center',
         }}
@@ -275,7 +276,7 @@ const Home = () => {
         <Typography variant="body1" sx={{ mb: 4 }}>
           Subscribe to our newsletter for the latest deals and updates.
         </Typography>
-        <Button variant="contained" sx={{ backgroundColor: '#C1B49A', color: '#4E3827' }}>
+        <Button variant="contained" sx={{ backgroundColor: '#e4e2dd', color: '#4E3827' }}>
           Subscribe Now
         </Button>
       </Box>

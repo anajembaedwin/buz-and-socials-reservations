@@ -4,27 +4,64 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HotelCard from '../components/HotelCard';
 import SearchIcon from '@mui/icons-material/Search';
+import images from '../utils/loadImages'; // Import the images object
 
 const hotels = [
   {
-    image: '/assets/images/hotel1.jpg',
+    image: images['hotel1.jpg'],
     name: 'Hotel Luxury',
     location: 'Paris, France',
-    description: 'Experience the luxury and elegance of Paris at this five-star hotel.'
+    description: 'Experience the luxury and elegance of Paris at this five-star hotel.',
   },
   {
-    image: '/assets/images/hotel2.jpg',
+    image: images['hotel2.jpg'],
     name: 'Beach Resort',
     location: 'Malibu, USA',
-    description: 'Relax by the beach at this exclusive resort with stunning ocean views.'
+    description: 'Relax by the beach at this exclusive resort with stunning ocean views.',
   },
   {
-    image: '/assets/images/hotel3.jpg',
-    name: 'Mountain Retreat',
-    location: 'Aspen, USA',
-    description: 'Enjoy the serene beauty of the mountains at this cozy retreat.'
+    image: images['hotel3.jpg'],
+    name: 'Beach Resort',
+    location: 'Malibu, USA',
+    description: 'Relax by the beach at this exclusive resort with stunning ocean views.',
   },
-  // Add more hotels as needed
+  {
+    image: images['hotel1.jpg'],
+    name: 'Hotel Luxury',
+    location: 'Paris, France',
+    description: 'Experience the luxury and elegance of Paris at this five-star hotel.',
+  },
+  {
+    image: images['hotel2.jpg'],
+    name: 'Beach Resort',
+    location: 'Malibu, USA',
+    description: 'Relax by the beach at this exclusive resort with stunning ocean views.',
+  },
+  {
+    image: images['hotel3.jpg'],
+    name: 'Beach Resort',
+    location: 'Malibu, USA',
+    description: 'Relax by the beach at this exclusive resort with stunning ocean views.',
+  },
+  {
+    image: images['hotel1.jpg'],
+    name: 'Hotel Luxury',
+    location: 'Paris, France',
+    description: 'Experience the luxury and elegance of Paris at this five-star hotel.',
+  },
+  {
+    image: images['hotel2.jpg'],
+    name: 'Beach Resort',
+    location: 'Malibu, USA',
+    description: 'Relax by the beach at this exclusive resort with stunning ocean views.',
+  },
+  {
+    image: images['hotel3.jpg'],
+    name: 'Beach Resort',
+    location: 'Malibu, USA',
+    description: 'Relax by the beach at this exclusive resort with stunning ocean views.',
+  },
+  // Add more featured hotels as needed
 ];
 
 const Hotels = () => {
@@ -56,8 +93,8 @@ const Hotels = () => {
               textAlign: 'center', 
               mb: 8, 
               py: 6, 
-              backgroundColor: '#4E3827', 
-              color: '#e4e2dd', 
+              backgroundColor: '#e4e2dd', 
+              color: '#4E3827', //#4E3827
               borderRadius: 2 
             }}
           >

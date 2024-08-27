@@ -7,7 +7,7 @@ const Footer = () => {
       sx={{
         backgroundColor: '#4E3827',
         color: '#e4e2dd',
-        padding: '20px 0',
+        padding: '10px 0',  // Further reduced padding
         width: '100%',
         position: 'relative',
         bottom: 0,
@@ -15,7 +15,7 @@ const Footer = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={4} sx={{ justifyContent: 'space-between' }}>
+        <Grid container spacing={4} sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
           {/* About Section */}
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" gutterBottom>
@@ -28,7 +28,7 @@ const Footer = () => {
           </Grid>
 
           {/* Quick Links */}
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" gutterBottom>
               Quick Links
             </Typography>
@@ -50,7 +50,7 @@ const Footer = () => {
           </Grid>
 
           {/* Contact Information */}
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} sx={{ textAlign: 'right' }}>
             <Typography variant="h6" gutterBottom>
               Contact Us
             </Typography>
@@ -67,7 +67,7 @@ const Footer = () => {
         </Grid>
 
         {/* Footer Bottom */}
-        <Box textAlign="center" mt={4}>
+        <Box textAlign="center" mt={2}>
           <Typography variant="body2">
             &copy; {new Date().getFullYear()} Buz Hotels. All rights reserved.
           </Typography>

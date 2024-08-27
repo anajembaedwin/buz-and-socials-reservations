@@ -21,8 +21,8 @@ const About = () => {
               textAlign: 'center', 
               mb: 6, 
               py: 6, 
-              backgroundColor: '#4E3827', 
-              color: '#e4e2dd',
+              backgroundColor: '#e4e2dd', 
+              color: '#4E3827', //#4E3827
               borderRadius: 2 
             }}
           >
@@ -58,7 +58,7 @@ const About = () => {
             <Typography variant="h5" gutterBottom>
               Ready to Plan Your Next Trip?
             </Typography>
-            <Button variant="contained" color="primary" sx={{ backgroundColor: '#4E3827', color: '#e4e2dd' }}>
+            <Button variant="contained" color="primary" sx={{ backgroundColor: '#e4e2dd', color: '#4E3827' }}>
               Explore Hotels
             </Button>
           </Box>

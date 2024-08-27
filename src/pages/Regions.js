@@ -3,22 +3,59 @@ import { Container, Typography, Box } from '@mui/material';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LocationSection from '../components/LocationSection';
+import images from '../utils/loadImages'; // Import the images object
 
 const regions = [
   {
-    image: '/assets/images/hotel1.jpg',
+    image: images['europe.jpg'],
     name: 'Europe',
     location: 'Various Locations',
     description: 'Explore the historic cities and beautiful landscapes of Europe.'
   },
   {
-    image: '/assets/images/hotel2.jpg',
+    image: images['north-america.jpg'],
     name: 'North America',
     location: 'Various Locations',
     description: 'Discover the diverse cities and natural wonders of North America.'
   },
   {
-    image: '/assets/images/hotel3.jpg',
+    image: images['asia.jpg'],
+    name: 'Asia',
+    location: 'Various Locations',
+    description: 'Experience the vibrant cultures and breathtaking sights of Asia.'
+  },
+  {
+    image: images['europe.jpg'],
+    name: 'Europe',
+    location: 'Various Locations',
+    description: 'Explore the historic cities and beautiful landscapes of Europe.'
+  },
+  {
+    image: images['north-america.jpg'],
+    name: 'North America',
+    location: 'Various Locations',
+    description: 'Discover the diverse cities and natural wonders of North America.'
+  },
+  {
+    image: images['asia.jpg'],
+    name: 'Asia',
+    location: 'Various Locations',
+    description: 'Experience the vibrant cultures and breathtaking sights of Asia.'
+  },
+  {
+    image: images['europe.jpg'],
+    name: 'Europe',
+    location: 'Various Locations',
+    description: 'Explore the historic cities and beautiful landscapes of Europe.'
+  },
+  {
+    image: images['north-america.jpg'],
+    name: 'North America',
+    location: 'Various Locations',
+    description: 'Discover the diverse cities and natural wonders of North America.'
+  },
+  {
+    image: images['asia.jpg'],
     name: 'Asia',
     location: 'Various Locations',
     description: 'Experience the vibrant cultures and breathtaking sights of Asia.'
@@ -44,8 +81,8 @@ const Regions = () => {
               textAlign: 'center', 
               mb: 8, 
               py: 6, 
-              backgroundColor: '#4E3827', 
-              color: '#e4e2dd', 
+              backgroundColor: '#e4e2dd', 
+              color: '#4E3827', //#4E3827
               borderRadius: 2 
             }}
           >

@@ -4,7 +4,7 @@ import HotelCard from './HotelCard';
 
 const LocationSection = ({ locations }) => {
   return (
-    <Box sx={{ padding: '40px 20px', backgroundColor: '#fff3e0' }}>
+    <Box sx={{ padding: '40px 20px', backgroundColor: '#e4e2dd' }}>
       <Typography 
         variant="h4" 
         component="h2" 
