@@ -15,7 +15,7 @@ kinds.forEach(function(t){t.addEventListener('click',function(){pick(t.dataset.k
 $('#sform').addEventListener('submit',function(e){e.preventDefault();var p=new URLSearchParams({kind:st.dataset.kind});$$('.set:not(.hide) [name]',st).forEach(function(i){if(i.value)p.set(i.name,i.value)});location.href='/enquiry.html?'+p.toString()})}
 // enquiry
 var ef=$('#eform');
-if(ef){var q=new URLSearchParams(location.search);var kinds2=$$('.tab',ef);
+if(ef){var q=new URLSearchParams(location.search);var card=ef.parentNode,kinds2=$$('.tab',card);
 function pk(k){kinds2.forEach(function(t){t.classList.toggle('on',t.dataset.k===k)});$$('.set',ef).forEach(function(s){var on=s.dataset.k===k;s.classList.toggle('hide',!on);$$('input,select,textarea',s).forEach(function(i){i.disabled=!on})});ef.dataset.kind=k}
 kinds2.forEach(function(t){t.addEventListener('click',function(){pk(t.dataset.k)})});
 pk(q.get('kind')||'hotel');
@@ -24,7 +24,7 @@ ef.addEventListener('submit',function(e){e.preventDefault();var err=$('#err');er
 var nm=ef.elements.yname.value.trim(),ph=ef.elements.ywa.value.trim(),em=ef.elements.yemail.value.trim();
 if(!nm){err.textContent='Please tell us your name.';return}
 if(!ph&&!em){err.textContent='Please add a WhatsApp number or an email so we can send your quote.';return}
-var lines=['Hello Buz and Socials, I would like a quote.','Request: '+$('.tab.on',ef).textContent];
+var lines=['Hello Buz and Socials, I would like a quote.','Request: '+$('.tab.on',card).textContent];
 $$('.set:not(.hide) [name]',ef).forEach(function(i){if(i.value.trim()){var l=i.closest('label');var lab=l?l.firstChild.textContent.trim():i.name;lines.push(lab+': '+i.value.trim())}});
 lines.push('Name: '+nm);if(ph)lines.push('WhatsApp: '+ph);if(em)lines.push('Email: '+em);
 var rq='RQ-'+Date.now().toString(36).toUpperCase().slice(-5);lines.push('Request number: '+rq);
